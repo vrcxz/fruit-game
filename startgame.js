@@ -208,7 +208,8 @@ class Main extends Phaser.Scene{
       this.restart.setDepth(3);
       this.restart.setInteractive();
       this.restart.on('pointerdown',()=>{
-       location.reload();
+       //location.reload();
+       this.scene.restart();
       });
       
       
