@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+  <title>Suika</title>
+ </head>
+ <body>
+  <style>
+   body{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+   }
+   
+   form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   
+   #close_input{
+    width: 50px;
+   }
+  </style>
+ <!-- <dialog id='input_name'>
+  <form action="save_score.php" method="POST">
+    <div style="display:flex; align-self:flex-end;">
+    <button id="close_input" onclick="close_dialog()">close</button>
+    </div>
+    <br>
+    <label for="name">Enter your name:</label>
+    <br>
+    <input type="text" name="name"> 
+    <br>
+    <input id="form_score" type="text" name="score" readonly>
+    <br>
+    <input type="submit" value="Save Score">
+   </form>
+  </dialog>
+  -->
+  <script src="eruda.js"></script>
+  <script src="phaser.min.js"></script>
+  <script>
+   let HEIGHT = window.innerHeight;
+   let WIDTH = window.innerWidth;
+   let main_score = 0;
+   eruda.init();
+   
+   function getScore(){
+    return main_score;
+   }
+   
+   function close_dialog(){
+    let input = document.getElementById('input_name');
+    input.close();
+   }
+   
+  </script>
+  <script src="watermelon.js"></script>
+  <script src="startgame.js"></script>
+  <script src="index.js"></script>
+ </body>
+</html>
